@@ -32,9 +32,38 @@ Customer_prediction/
 
 
 ## How to Run
-1. Create and activate a virtual environment
-2. Install dependencies from `requirements.txt`
-3. Run `data_preprocessing.py`
-4. Run `train_baseline.py`
-5. Run `predict.py` to test on unseen data
+### 1️⃣ Setup Environment
+
+Clone the repository and navigate into the project directory.
+
+```bash
+python3.11 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+⚠️ Make sure:
+- Backticks ``` are correct
+- No extra spaces
+
+---
+
+## STEP 4 — Update the rest of “How to Run”
+
+Below that, make sure you have **this exact order**:
+
+```md
+### 2️⃣ Data Preprocessing
+```bash
+python src/data_preprocessing.py
+
+3️⃣ Train Model
+python src/train_baseline.py
+
+4️⃣ CLI Prediction
+python src/predict_cli.py
+
+5️⃣ Web App (Streamlit)
+streamlit run src/app.py
+
+
 
