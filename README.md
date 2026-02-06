@@ -32,28 +32,12 @@ Customer_prediction/
 
 
 ## How to Run
-### 1️⃣ Setup Environment
-
-Clone the repository and navigate into the project directory.
-
+1️⃣ Setup Environment
 ```bash
 python3.11 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-
-⚠️ Make sure:
-- Backticks ``` are correct
-- No extra spaces
-
----
-
-## STEP 4 — Update the rest of “How to Run”
-
-Below that, make sure you have **this exact order**:
-
-```md
-### 2️⃣ Data Preprocessing
-```bash
+2️⃣ Data Preprocessing
 python src/data_preprocessing.py
 
 3️⃣ Train Model
@@ -64,6 +48,3 @@ python src/predict_cli.py
 
 5️⃣ Web App (Streamlit)
 streamlit run src/app.py
-
-
-
